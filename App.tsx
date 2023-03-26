@@ -2,13 +2,15 @@ import * as React from 'react';
 import { useState } from 'react';
 import './style.css';
 
-import form from '/components/form/';
+import Form from './components/Form/Form';
+import Header from './components/Header/Header';
 
 export default function App() {
   const [showSideBar, SetShowSider] = useState(false);
 
   return (
     <div>
+      <Header />
       <div className="container mx-auto">
         <div className="flex flex-row flex-wrap py-4">
           <aside className="w-full sm:w-1/3 md:w-1/4 px-2">
@@ -59,7 +61,9 @@ export default function App() {
               </div>
             </div>
           </aside>
-          <main role="main" className="sm:w-2/3 md:w-1/2 pt-1 px-4"></main>
+          <main role="main" className="sm:w-2/3 md:w-1/2 pt-1 px-4">
+            <Form></Form>
+          </main>
         </div>
       </div>
       <footer className="mt-auto">...</footer>

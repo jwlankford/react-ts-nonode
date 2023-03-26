@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export default function form() {
+export default function Form() {
   return (
     <form>
       <div className="space-y-10">
